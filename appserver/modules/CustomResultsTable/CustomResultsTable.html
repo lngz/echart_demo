@@ -1,0 +1,10 @@
+<%page args="module"/>
+<%namespace name="lib" file="//lib.html" import="*"/>
+
+<%lib:script_tags files="${['/static/app/%s/esl.js' % APP['id']]}" />
+<%lib:script_tags files="${['/static/app/%s/echarts.js' % APP['id']]}" />
+<%lib:script_tags files="${['/static/app/%s/echarts-map.js' % APP['id']]}" />
+
+<div id="main" style="height:500px;border:1px solid #ccc;padding:10px;"></div>
+
+<div class="CustomResultsTableResults"></div>
